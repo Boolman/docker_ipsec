@@ -18,7 +18,7 @@ So put your configuration files accordingly and mount the needed volumes.
 
 ##### download
 ```bash
-docker pull deltaprojects/strongswan
+docker pull boolman/docker_ipsec:v1.0
 ```
 
 ##### run
@@ -28,5 +28,5 @@ docker run -d --privileged --net=host \
   -v '/etc/localtime:/etc/localtime:ro' \
   -v '/etc/ipsec.docker:/etc/ipsec.docker:ro' \
   -v '/etc/strongswan.docker:/etc/strongswan.docker:ro' \
-  --name ipsec docker_ipsec
+  --name ipsec boolman/docker_ipsec:v1.0
 ```
